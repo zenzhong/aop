@@ -1,3 +1,10 @@
+<!--
+ * @Author: 小指
+ * @Date: 2021-03-30 10:46:47
+ * @LastEditTime: 2021-03-30 10:48:42
+ * @LastEditors: 小指
+ * @Description: 使用说明
+-->
 # aop
 javascript aop面向切面编程，完成顺序链式调用
 
@@ -8,7 +15,7 @@ javascript aop面向切面编程，完成顺序链式调用
 ## 安装
 
 ```bash
-npm i @qzz/aop
+npm i qzz-aop
 ```
 
 ### 使用
@@ -54,7 +61,7 @@ function moreAfterFn() {
   console.log('Finished');
 }
 
-const AOP = require('../lib/index').default;
+const AOP = require('qzz-aop').default;
 async function test() {
   // 链式调用
   const aopIns = AOP.create(targetFn)
@@ -79,6 +86,8 @@ test();
 
 创建aop实例，第一个参数为`执行函数`，第二个参数为`执行上下文对象`，均可选，执行上下文不传则默认为`global`
 
+
+
 ### before(beforeFn: Function, ctx?: Object): this
 
 在调用链前插入函数，返回`this`用于链式调用
@@ -87,6 +96,8 @@ test();
 
 第二个参数为`执行上下文对象`，可选，执行上下文不传则默认为`create`获取的执行上下文
 
+
+
 ### after(afterFn: Function, ctx?: Object): this
 
 在调用链后插入函数，返回`this`用于链式调用
@@ -94,6 +105,8 @@ test();
 第一个参数为`执行函数`，必传
 
 第二个参数为`执行上下文对象`，可选，执行上下文不传则默认为`create`获取的执行上下文
+
+
 
 ### run(): Promise<any[]>
 
