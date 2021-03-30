@@ -1,0 +1,31 @@
+{
+  "name": "@qzz/aop",
+  "version": "1.0.0",
+  "description": "javascript aop面向切面编程",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "devDependencies": {
+    "@types/node": "^14.14.37",
+    "typescript": "^4.2.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "node ./test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zzq210218/aop.git"
+  },
+  "keywords": [
+    "aop",
+    "before",
+    "after",
+    "切面编程"
+  ],
+  "author": "小指<qingzz@qingzz.cn>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zzq210218/aop/issues"
+  },
+  "homepage": "https://github.com/zzq210218/aop#readme"
+}
