@@ -15,7 +15,7 @@ javascript aop面向切面编程，完成顺序链式调用
 ## 安装
 
 ```bash
-npm i qzz-aop
+npm i zzq-aop
 ```
 
 ### 使用
@@ -61,7 +61,7 @@ function moreAfterFn() {
   console.log('Finished');
 }
 
-const AOP = require('qzz-aop').default;
+const AOP = require('zzq-aop').default;
 async function test() {
   // 链式调用
   const aopIns = AOP.create(targetFn)

@@ -1,5 +1,5 @@
 {
-  "name": "qzz-aop",
+  "name": "zzq-aop",
   "version": "1.0.0",
   "description": "javascript aop面向切面编程",
   "main": "./lib/index.js",
