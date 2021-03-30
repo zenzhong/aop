@@ -1,6 +1,6 @@
 {
   "name": "zzq-aop",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "javascript aop面向切面编程",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
